@@ -4,7 +4,7 @@
     "parameters": {
         "mspOfferName": {
             "type": "string",
-            "defaultValue": "AQ and Microsoft Manages Services",
+            "defaultValue": "AQ and Microsoft Managed Services",
             "metadata": {
                 "description": "Specify a unique name for your offer"
             }
