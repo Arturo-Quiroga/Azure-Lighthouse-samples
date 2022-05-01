@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspOfferName": {
+            "value": "Microsoft Managed Services"
+        },
+        "mspOfferDescription": {
+            "value": "Microsoft Managed Services for subscriptions"
+        },
+        "managedByTenantId": {
+            "value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "authorizations": {
+            "value": [
+                { 
+                    "principalId": "e42de08c-8851-43c4-aedf-82b016ea96b1", 
+                    "roleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                    "principalIdDisplayName": "Microsoft Managed Services group" 
+                }
+                    ]
+                }                
+        }
+}
