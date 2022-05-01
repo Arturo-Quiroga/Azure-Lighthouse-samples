@@ -4,24 +4,34 @@
     "parameters": {
         "mspOfferName": {
             "type": "string",
+            "defaultValue": "AQ and Microsoft Manages Services",
             "metadata": {
                 "description": "Specify a unique name for your offer"
             }
         },
         "mspOfferDescription": {
             "type": "string",
+            "defaultValue": "AQ and Microsoft Managed Services for subscriptions"
             "metadata": {
                 "description": "Name of the Managed Service Provider offering"
             }
         },
         "managedByTenantId": {
             "type": "string",
+            "defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47"
             "metadata": {
                 "description": "Specify the tenant id of the Managed Service Provider"
             }
         },
         "authorizations": {
             "type": "array",
+            "defaultValues": [
+                { 
+                    "principalId": "e42de08c-8851-43c4-aedf-82b016ea96b1", 
+                    "roleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                    "principalIdDisplayName": "Microsoft Managed Services group" 
+                }
+                    ],
             "metadata": {
                 "description": "Specify an array of objects, containing tuples of Azure Active Directory principalId, a Azure roleDefinitionId, and an optional principalIdDisplayName. The roleDefinition specified is granted to the principalId in the provider's Active Directory and the principalIdDisplayName is visible to customers."
             }
